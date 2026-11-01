@@ -1,84 +1,364 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Let's Flock!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | Let’s Flock!</title>
+  <meta name="description" content="What information the Let’s Flock! VR game and website collect, why, who handles it, and how to see or delete your data.">
+  <meta name="theme-color" content="#5e9ff0">
+  <link rel="canonical" href="https://tapley123.github.io/LetsFlockWebsite/privacy.html">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/bagel-fat-one-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <img src="logo.png" alt="Let's Flock Logo" class="logo">
-    <nav>
+<body class="page-policy">
+  <a class="skip" href="#content">Skip to the policy</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/img/logo.webp" alt="Let’s Flock! home" width="480" height="233"></a>
+    <nav aria-label="Main">
       <a href="index.html">Home</a>
-      <a href="privacy.html" class="active">Privacy Policy</a>
+      <a href="privacy.html" aria-current="page">Privacy Policy</a>
     </nav>
   </header>
 
-  <main class="content">
-    <h1>Privacy Policy — Let’s Flock!</h1>
-    <p><strong>Effective Date:</strong> January 1, 2025<br>
-    <strong>Developer:</strong> Tapley Games</p>
+  <main id="content" class="policy">
+    <h1>Privacy Policy</h1>
+    <p class="policy-meta">Let’s Flock! &middot; Last updated 1 November 2026</p>
 
-    <h2>Important Note</h2>
-    <p>Our applications, including <em>Let’s Flock!</em>, are intended for users aged 13 years or older. We do not knowingly collect or store personal information from children under 13 years of age, in compliance with the Children’s Online Privacy Protection Act (COPPA). If we learn that we have collected data from a child under 13 without verified parental consent, we will delete that information promptly.</p>
+    <p>Let’s Flock! is a social VR game for Meta Quest, made by Tapley Games (“we” or “us”). This policy explains what the game and this website collect, why, who else handles it, and how you can see or delete it. We’ve tried to keep it easy to read. If you’re under 18, it’s a good one to read with a parent or guardian.</p>
 
-    <h2>Information We Collect</h2>
-    <p>We collect only the data required to operate core gameplay features such as leaderboards and achievements:</p>
-    <ul>
-      <li><strong>Meta/Oculus UUID:</strong> Used to identify players for leaderboard ranking, score comparison, and entitlement verification.</li>
-      <li><strong>Meta/Oculus Username:</strong> Displayed in-game for leaderboards and social features.</li>
-      <li><strong>Score Data:</strong> Includes high scores and related gameplay metrics used for comparison.</li>
-      <li><strong>Leaderboard API Data:</strong> UUIDs, usernames, and associated statistics retrieved via Meta’s Leaderboard API and Microsoft PlayFab services.</li>
-      <li><strong>Achievements API Data:</strong> Used to display completed or unlocked achievements in-game.</li>
-    </ul>
-    <p>No personally identifiable information such as real names, email addresses, or contact details is collected directly by <em>Let’s Flock!</em>.</p>
+    <section class="summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">The short version</h2>
+      <ul>
+        <li><strong>Your Meta account signs you in.</strong> We use your Meta user ID and username to run your game account and save your progress.</li>
+        <li><strong>Voice chat is live.</strong> It goes to the players in your room. We don’t record it or keep it.</li>
+        <li><strong>We never ask for your real name, email address or payment details</strong> in the game.</li>
+        <li><strong>No ads, and we don’t sell your data.</strong></li>
+        <li><strong>You’re in charge.</strong> Ask us at any time to show you your data or delete it: <a href="mailto:letsflockvr+privacy@gmail.com">letsflockvr+privacy@gmail.com</a>.</li>
+        <li><strong>Let’s Flock! is for ages 13 and over.</strong></li>
+      </ul>
+    </section>
 
-    <h2>How We Use This Information</h2>
-    <ul>
-      <li>To display in-game leaderboards and achievements.</li>
-      <li>To verify entitlement and maintain fair gameplay.</li>
-      <li>To improve player experience and general performance analytics.</li>
-    </ul>
-    <p>Collected data is used only within the context of the game. We do not sell, rent, or share user data with third parties for marketing purposes.</p>
+    <nav class="toc" aria-labelledby="toc-title">
+      <h2 id="toc-title">What’s in this policy</h2>
+      <ol>
+        <li><a href="#collect">What we collect</a></li>
+        <li><a href="#use">Why we use it</a></li>
+        <li><a href="#visible">What other players can see</a></li>
+        <li><a href="#share">Who handles your information</a></li>
+        <li><a href="#transfers">Where it’s processed</a></li>
+        <li><a href="#retention">How long we keep it</a></li>
+        <li><a href="#rights">Your choices and rights</a></li>
+        <li><a href="#delete">How to delete your data</a></li>
+        <li><a href="#children">Children and teens</a></li>
+        <li><a href="#security">Keeping it safe</a></li>
+        <li><a href="#website">This website</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </nav>
 
-    <h2>Data Processors and Service Providers</h2>
-    <p>To provide online features, we use trusted service providers:</p>
-    <ul>
-      <li><strong>Meta Platforms, Inc.:</strong> Provides the Oculus Platform and stores user profile data.</li>
-      <li><strong>Microsoft Corporation (PlayFab):</strong> Hosts leaderboard and achievement data on Microsoft Azure servers.</li>
-    </ul>
-    <p>These providers process limited user information on our behalf under strict confidentiality and security standards.</p>
+    <section id="collect">
+      <h2><span>1.</span> What we collect</h2>
+      <p>You don’t need a separate account. The game signs you in with your Meta account, then keeps a game account linked to it.</p>
 
-    <h2>International Data Transfers</h2>
-    <p>Data may be processed in the United States, Ireland, Netherlands, and Singapore where these services maintain servers. By using the Game, you consent to such transfers for the purpose of providing platform features.</p>
+      <div class="table">
+        <table>
+          <caption>Your account</caption>
+          <thead><tr><th scope="col">Information</th><th scope="col">What it’s for</th><th scope="col">Where it goes</th></tr></thead>
+          <tbody>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Meta user ID</strong>, a number that identifies you in this game</th>
+              <td data-label="What it’s for">Signs you in, checks you own the game, links your progress and purchases, and makes friends, reporting and blocking work</td>
+              <td data-label="Where it goes">Meta and Microsoft. It’s also sent through Photon to the games of other players in your room</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Meta username</strong></th>
+              <td data-label="What it’s for">Your bird’s name tag, and your name on boards and leaderboards</td>
+              <td data-label="Where it goes">Meta, Microsoft and Photon. Other players can see it</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Friends:</strong> your Meta friends who play, their usernames and profile pictures, and whether they’re online and can be joined</th>
+              <td data-label="What it’s for">The Flock Tree, the friends list, invites, and joining friends from the game or Meta’s menus</td>
+              <td data-label="Where it goes">Read from Meta while you play. We don’t store it</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Your block list</strong> on Meta</th>
+              <td data-label="What it’s for">Silences the players you’ve blocked</td>
+              <td data-label="Where it goes">Read from Meta while you play. We don’t store it</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <h2>Data Security</h2>
-    <p>We use reasonable administrative and technical measures to help protect information. All leaderboard and achievement data are handled through secure platform APIs and stored within the service environments of Meta and PlayFab.</p>
+      <div class="table">
+        <table>
+          <caption>Your game</caption>
+          <thead><tr><th scope="col">Information</th><th scope="col">What it’s for</th><th scope="col">Where it goes</th></tr></thead>
+          <tbody>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Progress and looks:</strong> Feathers, Golden Eggs, the items you own, your saved looks, the game modes you’ve played and how you did, and your challenges</th>
+              <td data-label="What it’s for">Saves your game, pays your rewards and keeps them fair</td>
+              <td data-label="Where it goes">Microsoft (PlayFab)</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Scores and achievements</strong>, including your bird’s look on leaderboard entries</th>
+              <td data-label="What it’s for">Leaderboards and achievements</td>
+              <td data-label="Where it goes">Meta. Other players can see leaderboard entries</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Purchases:</strong> what you bought, its purchase ID and when you bought it</th>
+              <td data-label="What it’s for">Delivers what you bought and makes sure you only get it once</td>
+              <td data-label="Where it goes">Meta and Microsoft. Meta takes the payment, and we never see your card or payment details</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <h2>Your Rights</h2>
-    <p>Depending on your location, you may have rights to access, correct, or request deletion of your data processed through the Game. To exercise these rights, contact us at the email below, and we will coordinate with Meta or Microsoft as needed.</p>
+      <div class="table">
+        <table>
+          <caption>While you play</caption>
+          <thead><tr><th scope="col">Information</th><th scope="col">What it’s for</th><th scope="col">Where it goes</th></tr></thead>
+          <tbody>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Your voice</strong>, from your headset’s microphone while you aren’t muted</th>
+              <td data-label="What it’s for">Proximity voice chat, and moving your bird’s beak when you talk</td>
+              <td data-label="Where it goes">Sent live through Photon to players in your room. Not recorded and not stored by us</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Your movement:</strong> where your headset, hands and controllers are, including hand tracking</th>
+              <td data-label="What it’s for">Flying, and animating your bird</td>
+              <td data-label="Where it goes">Used on your headset, and your bird’s movement is sent live through Photon to players in your room. Not stored by us</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Connection details</strong>, such as your IP address and network region</th>
+              <td data-label="What it’s for">Connects you to our servers and to a multiplayer room near you</td>
+              <td data-label="Where it goes">Photon and Microsoft</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Server logs:</strong> when you signed in, your IDs, what rewards or purchases were handled, and any errors</th>
+              <td data-label="What it’s for">Finding bugs, stopping cheating and keeping the servers secure</td>
+              <td data-label="Where it goes">Microsoft (Azure)</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Reports:</strong> if someone reports a player, who was reported, their username and Meta user ID, the area and room, the reason, and anything the reporter writes</th>
+              <td data-label="What it’s for">Keeping players safe and acting on bad behaviour</td>
+              <td data-label="Where it goes">Sent through Meta’s reporting tool, which passes it to us</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Headset details:</strong> basic statistics such as the device model and operating system</th>
+              <td data-label="What it’s for">The Unity game engine may gather these to help improve the engine. They don’t name you</td>
+              <td data-label="Where it goes">Unity</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information"><strong>Messages to us</strong>, such as an email or a Discord post</th>
+              <td data-label="What it’s for">Replying to you and improving the game</td>
+              <td data-label="Where it goes">Google (Gmail) or Discord</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <h2>In-App Purchases (IAPs)</h2>
-    <p>Let’s Flock! may offer in-app purchases to enhance gameplay. All payment transactions are processed securely through the Meta Quest Store and/or the Oculus Platform. 
-    We do not collect or store your payment information. Limited data, such as your Meta/Oculus User ID and purchase timestamp, may be used to verify purchases, manage entitlements, and deliver content. 
-    This information is handled securely and is not shared with third parties for marketing purposes.</p>
-    
-    <h2>Children’s Privacy</h2>
-    <p><em>Let’s Flock!</em> is not directed to children under 13. Parents or guardians who believe a child has provided personal data without consent may contact us, and we will remove the data as required by law.</p>
+      <p>Your settings, and small notes such as which new items you’ve already seen, stay on your headset.</p>
 
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any material changes will be reflected in the latest version available within the Meta Quest Store listing and on our official website.</p>
+      <h3>What we don’t collect</h3>
+      <p>The game doesn’t collect your real name, email address, phone number, home address, payment details or precise location. It doesn’t use your headset’s cameras, eye tracking or face tracking, and it has no advertising or advertising IDs. Meta handles your Meta account separately, under <a href="https://www.meta.com/legal/privacy-policy/" rel="noopener">its own privacy policy</a>.</p>
+    </section>
 
-    <h2>Contact Us</h2>
-    <p>For questions about this Privacy Policy or our data practices, please contact:<br>
-    <strong>Email:</strong> <a href="mailto:letsflockvr+privacy@gmail.com">letsflockvr+privacy@gmail.com</a></p>
+    <section id="use">
+      <h2><span>2.</span> Why we use it</h2>
+      <p>We only use your information for the reasons below. If you’re in the UK or the EU, the law asks us to give a legal reason for each one, so we’ve listed those too.</p>
+      <div class="table">
+        <table>
+          <thead><tr><th scope="col">What we do</th><th scope="col">Our legal reason</th></tr></thead>
+          <tbody>
+            <tr>
+              <th scope="row" data-label="What we do">Run the game: sign you in, save your progress, connect you with other players, carry voice chat, power friends features and deliver purchases</th>
+              <td data-label="Our legal reason">It’s needed to give you the game you asked for (contract)</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="What we do">Keep the game fair and safe: check you own the game, cap rewards at what’s possible, look into reports and ban accounts</th>
+              <td data-label="Our legal reason">Our legitimate interest, and all players’ interest, in a fair and safe game</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="What we do">Fix bugs and keep our servers secure</th>
+              <td data-label="Our legal reason">Our legitimate interest in the game working properly and safely</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="What we do">Keep purchase records and answer lawful requests</th>
+              <td data-label="Our legal reason">We have to by law (legal obligation)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We don’t use your information for advertising. We don’t sell it, and we don’t share it for anyone’s advertising. We don’t make automated decisions about you that have a legal or similarly serious effect.</p>
+    </section>
 
-    <p><a href="index.html">Back to Home</a></p>
+    <section id="visible">
+      <h2><span>3.</span> What other players can see</h2>
+      <p>Let’s Flock! is a social game, so some things are visible to other people:</p>
+      <ul>
+        <li>your Meta username, on your name tag, on boards and on leaderboards</li>
+        <li>your bird, its look and how it moves</li>
+        <li>your voice, if you’re nearby and not muted</li>
+        <li>your scores, your place on the Most Wanted board, and the Gossip magpie’s news about who pooped on whom</li>
+        <li>for your friends: whether you’re online, and where you are so they can join you</li>
+      </ul>
+      <p><strong>Please take care.</strong> Other players can hear what you say and could record their own screen, so never share personal details such as your full name, school or address. If your Meta username includes your real name, you can change it in your Meta account.</p>
+    </section>
+
+    <section id="share">
+      <h2><span>4.</span> Who handles your information</h2>
+      <p>We use these companies to run the game and this website. Each one gets only what it needs for the job in this table.</p>
+      <div class="table">
+        <table>
+          <thead><tr><th scope="col">Company</th><th scope="col">What it does for Let’s Flock!</th></tr></thead>
+          <tbody>
+            <tr>
+              <th scope="row" data-label="Company"><a href="https://www.meta.com/legal/privacy-policy/" rel="noopener">Meta Platforms</a></th>
+              <td data-label="What it does">Sign-in, ownership checks, friends, invites, online status, blocking, leaderboards, achievements, payments and player reports</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Company"><a href="https://privacy.microsoft.com/privacystatement" rel="noopener">Microsoft</a> (PlayFab and Azure)</th>
+              <td data-label="What it does">Stores game accounts, progress and purchase records, runs our sign-in and rewards servers, and keeps server logs</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Company"><a href="https://www.photonengine.com/terms/privacyandcookiepolicy" rel="noopener">Exit Games</a> (Photon)</th>
+              <td data-label="What it does">Runs multiplayer rooms and carries live voice chat and movement between players</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Company"><a href="https://unity.com/legal/privacy-policy" rel="noopener">Unity Technologies</a></th>
+              <td data-label="What it does">Makes the game engine, which may gather basic headset statistics</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Company"><a href="https://policies.google.com/privacy" rel="noopener">Google</a> (Gmail)</th>
+              <td data-label="What it does">Receives the emails you send us</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Company"><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub</a></th>
+              <td data-label="What it does">Hosts this website</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Meta also runs your Meta account in its own right, so its privacy policy covers that. We may share information if the law requires it, or if we need to protect someone’s safety. If the game ever moves to a new owner, this policy would move with it and we’d tell you.</p>
+    </section>
+
+    <section id="transfers">
+      <h2><span>5.</span> Where it’s processed</h2>
+      <p>These companies run servers around the world, including in the United States and the European Union. Photon connects you to a server region near you, or to a friend’s region when you join them. This means your information may be handled outside your country. When it leaves the UK or the European Economic Area, we rely on our providers’ safeguards, such as the Standard Contractual Clauses approved for these transfers.</p>
+    </section>
+
+    <section id="retention">
+      <h2><span>6.</span> How long we keep it</h2>
+      <p>We delete information when we no longer need it to run the game or keep it safe.</p>
+      <div class="table">
+        <table>
+          <thead><tr><th scope="col">Information</th><th scope="col">How long</th></tr></thead>
+          <tbody>
+            <tr>
+              <th scope="row" data-label="Information">Game account, progress, looks and items</th>
+              <td data-label="How long">Until you ask us to delete them, or until they’re no longer needed to run the game</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information">Voice and movement</th>
+              <td data-label="How long">Not kept by us. They pass through live while you play</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information">Purchase records</th>
+              <td data-label="How long">As long as we need them to honour your purchases and meet tax and accounting rules, which can continue after you delete your account</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information">Server logs</th>
+              <td data-label="How long">A short time, then they’re deleted automatically</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information">Reports and safety records, such as a ban</th>
+              <td data-label="How long">As long as we need them to deal with the problem and keep players safe</td>
+            </tr>
+            <tr>
+              <th scope="row" data-label="Information">Emails and messages to us</th>
+              <td data-label="How long">As long as we need them to help you</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="rights">
+      <h2><span>7.</span> Your choices and rights</h2>
+      <h3>In the game</h3>
+      <ul>
+        <li><strong>Your microphone:</strong> you can mute yourself, or say no to the microphone permission. You can still play, but nobody will hear you.</li>
+        <li><strong>Other players:</strong> you can mute, block or report anyone from the pause menu. You can also report through the Meta button.</li>
+        <li><strong>Who you play with:</strong> you can open a friends-only nest to play with just your friends.</li>
+      </ul>
+      <h3>Your legal rights</h3>
+      <p>Depending on where you live, including the UK, the EU and US states such as California, you may have the right to:</p>
+      <ul>
+        <li>see the information we hold about you and get a copy of it</li>
+        <li>have it corrected</li>
+        <li>have it deleted</li>
+        <li>object to how we use it, or ask us to limit it</li>
+      </ul>
+      <p>To use any of these rights, email <a href="mailto:letsflockvr+privacy@gmail.com">letsflockvr+privacy@gmail.com</a> with your Meta username. It’s free, and we’ll reply within one month. A parent or guardian can ask on behalf of a child. If you’re unhappy with how we’ve handled your information, please tell us first. You can also complain to a data protection regulator, such as the <a href="https://ico.org.uk/make-a-complaint/" rel="noopener">ICO</a> in the UK or your <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en" rel="noopener">local authority</a> in the EU.</p>
+    </section>
+
+    <section id="delete">
+      <h2><span>8.</span> How to delete your data</h2>
+      <ol>
+        <li>Email <a href="mailto:letsflockvr+privacy@gmail.com?subject=Delete%20my%20data">letsflockvr+privacy@gmail.com</a> with the subject “Delete my data”.</li>
+        <li>Include your Meta username. We may ask a question or two to check the account is yours.</li>
+        <li>We’ll delete your data and confirm by email within one month.</li>
+      </ol>
+      <p>This removes your game account, progress, looks, items and Golden Eggs, and clears your leaderboard scores. <strong>It can’t be undone.</strong> We’ll keep only what the law requires, such as purchase records, and what we need for safety, such as a record of a ban.</p>
+      <p>Removing the game from your headset doesn’t delete this data, so you’ll need to ask us. If your Meta account is deleted, we’ll delete the game data linked to it once we’re told. Your Meta account, and what Meta holds about it, are managed in your Meta account settings.</p>
+    </section>
+
+    <section id="children">
+      <h2><span>9.</span> Children and teens</h2>
+      <p>Let’s Flock! is for ages 13 and over. It isn’t meant for children under 13, and we don’t knowingly collect their information. If we learn that a child under 13 has been playing, we’ll delete their information.</p>
+      <p>If you’re a parent or guardian and think your child under 13 has played, please email <a href="mailto:letsflockvr+privacy@gmail.com">letsflockvr+privacy@gmail.com</a> and we’ll remove it. Players can also report someone who’s underage from inside the game.</p>
+      <p>The game has open voice chat with other players. If your teenager plays, it’s worth showing them how to mute, block and report. You can contact us at any time with questions about your child’s information.</p>
+    </section>
+
+    <section id="security">
+      <h2><span>10.</span> Keeping it safe</h2>
+      <p>Sign-ins, saves and purchases travel over encrypted connections. Meta confirms who you are before our server signs you in, and our secret keys stay on our servers, not in the game. No online service is perfectly secure, so we can’t promise nothing will ever go wrong. If something does happen that puts you at risk, we’ll tell you and the regulators as the law requires.</p>
+    </section>
+
+    <section id="website">
+      <h2><span>11.</span> This website</h2>
+      <p>This website doesn’t use cookies, analytics, ads or trackers, and it has no forms. Its fonts, pictures and video all load from this site. GitHub hosts it and may log visitors’ IP addresses to keep its service secure.</p>
+      <p>Links to the Meta store, Discord, TikTok and YouTube take you to other companies’ sites, which have their own privacy policies. Discord is for ages 13 and over.</p>
+    </section>
+
+    <section id="changes">
+      <h2><span>12.</span> Changes to this policy</h2>
+      <p>When we change this policy, we’ll update the date at the top. If it’s a big change, we’ll also let players know in the game or on our Discord.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span>13.</span> Contact us</h2>
+      <p>Questions, requests or worries about your privacy are all welcome.</p>
+      <p><strong>Tapley Games</strong><br>
+      Email: <a href="mailto:letsflockvr+privacy@gmail.com">letsflockvr+privacy@gmail.com</a></p>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2025 Tapley Games | Let’s Flock!</p>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; 2026 Tapley Games</p>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://discord.gg/wuvjcfY2Zb" rel="noopener">Discord</a>
+        <a href="https://www.tiktok.com/@letsflockvr?lang=en" rel="noopener">TikTok</a>
+        <a href="https://www.youtube.com/@LetsFlockVR" rel="noopener">YouTube</a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>

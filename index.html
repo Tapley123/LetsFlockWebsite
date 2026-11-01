@@ -1,40 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Let's Flock!</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Let’s Flock! | Flap your arms. Fly with friends.</title>
+  <meta name="description" content="Let’s Flock! is the social VR game for Meta Quest where your arms are your wings. Flap to climb, race through rings, build your own bird and fly with friends.">
+  <meta name="theme-color" content="#5e9ff0">
+  <link rel="canonical" href="https://tapley123.github.io/LetsFlockWebsite/">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Let’s Flock!">
+  <meta property="og:description" content="The social VR game where your arms are your wings. Flap your arms. Fly with friends.">
+  <meta property="og:url" content="https://tapley123.github.io/LetsFlockWebsite/">
+  <meta property="og:image" content="https://tapley123.github.io/LetsFlockWebsite/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Let’s Flock! logo with cartoon birds flying around a giant nest in a tree.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/bagel-fat-one-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Let's Flock!",
+    "description": "The social VR game where your arms are your wings.",
+    "url": "https://tapley123.github.io/LetsFlockWebsite/",
+    "image": "https://tapley123.github.io/LetsFlockWebsite/assets/img/og-image.jpg",
+    "gamePlatform": "Meta Quest",
+    "applicationCategory": "Game",
+    "sameAs": [
+      "https://www.meta.com/en-gb/experiences/lets-flock/24861074283575178/",
+      "https://www.tiktok.com/@letsflockvr",
+      "https://www.youtube.com/@LetsFlockVR"
+    ]
+  }
+  </script>
+  <script src="assets/site.js" defer></script>
 </head>
-<body>
-    <header>
-        <img src="logo.png" alt="Let's Flock Logo" class="logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="privacy.html">Privacy Policy</a>
-        </nav>
-    </header>
+<body class="page-home">
+  <a class="skip" href="#content">Skip to the game info</a>
 
-    <main>
-        <section class="hero">
-            <h1>Welcome to Let's Flock!</h1>
-            <p>Soar, glide, and party together in <strong>Let’s Flock!</strong> — a social VR adventure where you become a bird! Walk, flap, and fly through open skies, play mini-games, and meet new flockmates in vibrant worlds built for movement, laughter, and freedom.</p>
-            <a href="#" class="cta">Wishlist Now</a>
-        </section>
+  <header class="site-header site-header--over">
+    <nav aria-label="Main">
+      <a href="privacy.html">Privacy Policy</a>
+      <a class="icon-link" href="https://discord.gg/wuvjcfY2Zb" rel="noopener" aria-label="Discord"><svg aria-hidden="true"><use href="assets/img/icons.svg#discord"/></svg></a>
+      <a class="icon-link" href="https://www.tiktok.com/@letsflockvr?lang=en" rel="noopener" aria-label="TikTok"><svg aria-hidden="true"><use href="assets/img/icons.svg#tiktok"/></svg></a>
+      <a class="icon-link" href="https://www.youtube.com/@LetsFlockVR" rel="noopener" aria-label="YouTube"><svg aria-hidden="true"><use href="assets/img/icons.svg#youtube"/></svg></a>
+    </nav>
+  </header>
 
-        <section class="features">
-            <h2>Features</h2>
-            <ul>
-                <li>🐦 Play as a bird and explore open skies</li>
-                <li>🎉 Join friends in fun, fast-paced mini-games</li>
-                <li>🌍 Meet new players and build your flock</li>
-                <li>💬 Social VR made for movement and connection</li>
+  <section class="hero" aria-labelledby="game-title">
+    <div class="hero-stage" data-hero>
+      <picture>
+        <source media="(max-width: 767px)" srcset="assets/img/hero-tall-640.webp 640w, assets/img/hero-tall.webp 1008w" sizes="100vw" width="1008" height="1440">
+        <img class="hero-art" src="assets/img/hero-wide.webp" srcset="assets/img/hero-wide-1280.webp 1280w, assets/img/hero-wide.webp 1920w" sizes="100vw" width="1920" height="1080" fetchpriority="high" alt="The Let’s Flock! logo, with cartoon birds flapping around a giant nest built in a tree above green fields.">
+      </picture>
+    </div>
+    <div class="beam">
+      <div class="wrap beam-inner">
+        <div>
+          <h1 id="game-title" class="visually-hidden">Let’s Flock!</h1>
+          <p class="tagline">Flap your arms. Fly with friends.</p>
+          <p class="beam-note">Coming to Meta Quest in Early Access on 10 December</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn--gold" href="https://www.meta.com/en-gb/experiences/lets-flock/24861074283575178/" rel="noopener">Wishlist on Meta Quest</a>
+          <a class="btn btn--cream" href="https://discord.gg/wuvjcfY2Zb" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#discord"/></svg>Join the Discord</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="content">
+    <section class="section" aria-labelledby="fly-title">
+      <svg class="cloud cloud--a" viewBox="0 0 200 90" aria-hidden="true"><use href="#cloud"/></svg>
+      <div class="wrap">
+        <h2 id="fly-title" class="display">Fly with your body</h2>
+        <p class="lede">Your arms are your wings. It’s flying the way you dreamed it as a kid, and a workout you won’t notice!</p>
+
+        <ul class="board">
+          <li class="poster">
+            <svg class="move move--flap" viewBox="0 0 160 140" aria-hidden="true">
+              <use href="#flyer"/>
+              <g class="wing-left"><use href="#wing"/></g>
+              <g transform="matrix(-1 0 0 1 160 0)"><g class="wing-left"><use href="#wing"/></g></g>
+            </svg>
+            <h3>Flap</h3>
+            <p>to climb</p>
+          </li>
+          <li class="poster">
+            <svg class="move move--spread" viewBox="0 0 160 140" aria-hidden="true">
+              <use href="#flyer"/>
+              <g class="wing-left"><use href="#wing"/></g>
+              <g transform="matrix(-1 0 0 1 160 0)"><g class="wing-left"><use href="#wing"/></g></g>
+            </svg>
+            <h3>Spread</h3>
+            <p>your arms to glide</p>
+          </li>
+          <li class="poster">
+            <svg class="move move--tuck" viewBox="0 0 160 140" aria-hidden="true">
+              <g class="speed"><path d="M30 34v22M130 24v30M46 14v16M114 8v14"/></g>
+              <use href="#flyer"/>
+              <g class="wing-left"><use href="#wing"/></g>
+              <g transform="matrix(-1 0 0 1 160 0)"><g class="wing-left"><use href="#wing"/></g></g>
+            </svg>
+            <h3>Tuck</h3>
+            <p>them in to go fast</p>
+          </li>
+          <li class="poster">
+            <svg class="move move--dive" viewBox="0 0 160 140" aria-hidden="true">
+              <g class="diver">
+                <path class="leg" d="M74 96 66 128M84 98l6 30"/>
+                <path class="torso" d="M90 58 80 96"/>
+                <circle class="head" cx="97" cy="34" r="15"/>
+                <rect class="headset" x="99" y="26" width="19" height="14" rx="4"/>
+                <g transform="translate(90 68) rotate(190) translate(-68 -58)"><use href="#wing"/></g>
+              </g>
+            </svg>
+            <h3>Point</h3>
+            <p>your hands forward to dive</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="nest-title">
+      <svg class="cloud cloud--b" viewBox="0 0 200 90" aria-hidden="true"><use href="#cloud"/></svg>
+      <div class="wrap">
+        <div class="row">
+          <div>
+            <h2 id="nest-title" class="display">The Great Nest</h2>
+            <p class="lede">Meet your flock in a giant nest high above the city.</p>
+            <p>Chat with proximity voice, try on looks in the Wardrobe, fill your Trophy Shelf, and ask the Gossip magpie who just pooped on whom.</p>
+            <p>Leave the safe zone for a poop fight and climb the Most Wanted board!</p>
+          </div>
+          <img class="frame" src="assets/img/shot-plaza.webp" srcset="assets/img/shot-plaza-800.webp 800w, assets/img/shot-plaza.webp 1600w" sizes="(max-width: 860px) 100vw, 550px" width="1600" height="900" loading="lazy" decoding="async" alt="The nest’s grassy plaza, with a wooden Most Wanted board on the left and the domed Wardrobe hut on the right.">
+        </div>
+
+        <figure class="pano frame" data-pano>
+          <img src="assets/img/shot-nest-above.webp" srcset="assets/img/shot-nest-above-800.webp 800w, assets/img/shot-nest-above.webp 1600w" sizes="(max-width: 1152px) 100vw, 1120px" width="1600" height="900" loading="lazy" decoding="async" alt="Flying down towards the Great Nest, a round nest built into a giant tree, with branches reaching out over a city.">
+          <figcaption class="pano-hint">Drag to look around the nest</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="modes-title">
+      <div class="wrap">
+        <h2 id="modes-title" class="display">Game modes</h2>
+        <div class="modes">
+          <article class="card">
+            <img src="assets/img/shot-high-800.webp" srcset="assets/img/shot-high-800.webp 800w, assets/img/shot-high.webp 1600w" sizes="(max-width: 860px) 100vw, 360px" width="1600" height="900" loading="lazy" decoding="async" alt="High above the nest, with a glowing ring waiting on top of the tree.">
+            <div class="card-body">
+              <h3>Ring Race</h3>
+              <p>Race through rings over the rooftops, ride the gusts and hit the podium.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/img/shot-portal-800.webp" srcset="assets/img/shot-portal-800.webp 800w, assets/img/shot-portal.webp 1600w" sizes="(max-width: 860px) 100vw, 360px" width="1600" height="900" loading="lazy" decoding="async" alt="A wooden arch in the nest opening onto a world of green pipes, with a Flippy Bird scoreboard beside it.">
+            <div class="card-body">
+              <h3>Flippy Bird</h3>
+              <p>Flap through the gaps and chase the golden feather.</p>
+            </div>
+          </article>
+          <article class="card card--egg">
+            <svg class="egg" viewBox="0 0 120 124" aria-hidden="true">
+              <path fill="#f4f6f9" d="M60 4 78 13l15 21 8 24v26l-10 20-17 13H46l-17-13L19 84V58l8-24 15-21z"/>
+              <path fill="#dfe4ea" d="M60 4 78 13l15 21 8 24v26l-10 20-17 13H60z"/>
+              <path fill="#c9d1da" d="M101 84 91 104l-17 13H46l-17-13-6-12 37 8z"/>
+              <path fill="#7fb0e0" d="m44 26 8 11-8 11-8-11zM84 44l7 10-7 10-7-10zM40 74l7 10-7 10-7-10zM76 86l7 8-7 9-7-9z"/>
+              <path class="crack" d="m22 58 13-8 9 10 13-12 10 12 12-10 21 8"/>
+            </svg>
+            <div class="card-body">
+              <h3>More to come</h3>
+              <p>More modes hatch as Early Access grows.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="bird-title">
+      <svg class="cloud cloud--c" viewBox="0 0 200 90" aria-hidden="true"><use href="#cloud"/></svg>
+      <div class="wrap">
+        <div class="row row--flip">
+          <img class="frame" src="assets/img/bird.webp" width="986" height="810" loading="lazy" decoding="async" alt="A round brown bird with an orange beak and huge wings spread wide, its body a swirling cloud of feathers.">
+          <div>
+            <h2 id="bird-title" class="display">Build your bird</h2>
+            <p class="lede">Every new item hatches from an egg!</p>
+            <ul class="chips">
+              <li>Heads</li><li>Beaks</li><li>Eyes</li><li>Wings</li><li>Feet</li><li>Bodies</li><li>Calls</li>
             </ul>
-        </section>
-    </main>
+            <p>Mix and match, save your favourite looks, and earn Feathers just by playing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <p>© 2025 Let's Flock! | <a href="privacy.html">Privacy Policy</a></p>
-    </footer>
+    <section class="section" aria-labelledby="friends-title">
+      <div class="wrap duo">
+        <article class="plank">
+          <img src="assets/img/flock-tree.webp" width="1540" height="760" loading="lazy" decoding="async" alt="Wooden rings hanging from the branches of the Flock Tree, each one leading to a friend.">
+          <div class="plank-body">
+            <h2 id="friends-title">Fly with friends</h2>
+            <p>Find friends on the Flock Tree and fly through their ring to join them, or open a friends-only nest.</p>
+          </div>
+        </article>
+        <article class="plank">
+          <img src="assets/img/shot-flyby-800.webp" srcset="assets/img/shot-flyby-800.webp 800w, assets/img/shot-flyby.webp 1600w" sizes="(max-width: 860px) 100vw, 550px" width="1600" height="900" loading="lazy" decoding="auto" alt="A player’s view in flight, brown wings spread out in front of them as they glide towards the nest.">
+          <div class="plank-body">
+            <h2>Play your way</h2>
+            <ul class="ticks">
+              <li>Full hand tracking or Touch controllers</li>
+              <li>No floating menus: everything is in the world</li>
+              <li>Snap turning, glide assist and gentle dives for comfort</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section flockup" aria-labelledby="flockup-title">
+      <div class="wrap">
+        <p class="eyebrow">Early Access</p>
+        <h2 id="flockup-title" class="display display--big">Flock Up!</h2>
+        <p class="lede">Let’s Flock! grows with its players. Tell us what to build next.</p>
+        <div class="actions actions--center">
+          <a class="btn btn--gold" href="https://www.meta.com/en-gb/experiences/lets-flock/24861074283575178/" rel="noopener">Wishlist on Meta Quest</a>
+          <a class="btn btn--cream" href="https://discord.gg/wuvjcfY2Zb" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#discord"/></svg>Discord</a>
+          <a class="btn btn--cream" href="https://www.tiktok.com/@letsflockvr?lang=en" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#tiktok"/></svg>TikTok</a>
+          <a class="btn btn--cream" href="https://www.youtube.com/@LetsFlockVR" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#youtube"/></svg>YouTube</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer site-footer--hills">
+    <div class="wrap footer-inner">
+      <div>
+        <p>&copy; 2026 Tapley Games</p>
+        <p class="footer-small">Meta and Meta Quest are trademarks of Meta Platforms, Inc.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:letsflockvr+privacy@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <svg class="sprites" aria-hidden="true">
+    <defs>
+      <symbol id="cloud" viewBox="0 0 200 90">
+        <path fill="#fff" d="M18 74 34 46l26-8 14-22 34-8 26 18 26 4 22 30 8 14z"/>
+        <path fill="#e6eff9" d="m108 8 26 18 26 4 22 30 8 14H96z"/>
+        <path fill="#cfdff0" d="M18 74h172l-14 8H34z"/>
+      </symbol>
+      <symbol id="flyer" viewBox="0 0 160 140">
+        <path class="leg" d="M73 98 70 130M87 98l3 32"/>
+        <rect class="torso-box" x="65" y="50" width="30" height="52" rx="12"/>
+        <circle class="head" cx="80" cy="30" r="15"/>
+        <rect class="headset" x="65" y="23" width="30" height="14" rx="5"/>
+      </symbol>
+      <symbol id="wing" viewBox="0 0 160 140" overflow="visible">
+        <path class="wing" d="M68 54 26 50l-16 6 12 4-8 8 15-1-4 9 15-5 2 8 13-8 13 4 8-8h4z"/>
+      </symbol>
+    </defs>
+  </svg>
 </body>
 </html>
