@@ -12,6 +12,6 @@ On launch day, change the "Wishlist on Meta Quest" buttons and the "Coming to Me
 
 - `index.html`: home page
 - `privacy.html`: privacy policy
-- `style.css`: all styles, using the game's UI palette
+- `style.css`: all styles, using the game's UI palette. When you change it or `assets/site.js`, bump the `?v=` number where the pages link to it, or returning visitors can get new HTML with an old cached stylesheet
 - `assets/site.js`: optional extras (the hero loop and the 360 view). Both pages work without it
 - `assets/`: images and video made from the store art, plus fonts with their licences
